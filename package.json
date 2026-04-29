@@ -1,0 +1,47 @@
+{
+  "name": "energy-consents",
+  "version": "0.1.0",
+  "description": "Scrapes all cases and documents from the Scottish energy consent website (energyconsents.scot).",
+  "author": "Loic Cunningham <loic.cunningham@gmail.com>",
+  "license": "MIT",
+  "type": "module",
+  "module": "src/cli.ts",
+  "private": true,
+  "bin": {
+    "energy-consents": "./src/cli.ts"
+  },
+  "scripts": {
+    "cli": "bun run src/cli.ts",
+    "index": "bun run src/cli.ts index",
+    "scrape": "bun run src/cli.ts scrape",
+    "download": "bun run src/cli.ts download"
+  },
+  "keywords": [
+    "scraper",
+    "scotland",
+    "energy",
+    "planning",
+    "asp.net",
+    "webforms",
+    "bun",
+    "typescript"
+  ],
+  "engines": {
+    "bun": ">=1.1.0"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/cli-progress": "^3.11.6",
+    "@types/yargs": "^17.0.35"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "cli-progress": "^3.12.0",
+    "node-html-parser": "^7.1.0",
+    "p-limit": "^7.3.0",
+    "picocolors": "^1.1.1",
+    "yargs": "^18.0.0"
+  }
+}

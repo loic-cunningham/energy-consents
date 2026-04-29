@@ -1,0 +1,25 @@
+node_modules/
+
+# scraped output (regenerate via the CLI)
+data/
+
+# logs
+*.log
+scraper.log
+
+# build artefacts
+out/
+dist/
+*.tgz
+*.tsbuildinfo
+.cache/
+
+# env
+.env
+.env.*.local
+
+# editor / OS noise
+.idea/
+.vscode/
+.DS_Store
+.claude/
